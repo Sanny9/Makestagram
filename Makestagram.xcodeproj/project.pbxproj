@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281D5337943482630C3084B0 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7A7F97AD783DCA6844AC1F /* Pods_Makestagram.framework */; };
 		D1AA1AE91F2A3B6D00BD5A59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1AE81F2A3B6D00BD5A59 /* AppDelegate.swift */; };
 		D1AA1AEB1F2A3B6D00BD5A59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA1AEA1F2A3B6D00BD5A59 /* ViewController.swift */; };
 		D1AA1AEE1F2A3B6D00BD5A59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AA1AEC1F2A3B6D00BD5A59 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A7A7F97AD783DCA6844AC1F /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97B980D0032693AE063BA03A /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
+		CCDBBDD1B16C5A1D61E0DE3C /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		D1AA1AE51F2A3B6D00BD5A59 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AA1AE81F2A3B6D00BD5A59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1AA1AEA1F2A3B6D00BD5A59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				281D5337943482630C3084B0 /* Pods_Makestagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78235E3BDD897269F1F20A8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A7A7F97AD783DCA6844AC1F /* Pods_Makestagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D1AA1ADC1F2A3B6D00BD5A59 = {
 			isa = PBXGroup;
 			children = (
 				D1AA1AE71F2A3B6D00BD5A59 /* Makestagram */,
 				D1AA1AE61F2A3B6D00BD5A59 /* Products */,
+				E3D731023EB1CA498B39975D /* Pods */,
+				78235E3BDD897269F1F20A8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = Makestagram;
 			sourceTree = "<group>";
 		};
+		E3D731023EB1CA498B39975D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCDBBDD1B16C5A1D61E0DE3C /* Pods-Makestagram.debug.xcconfig */,
+				97B980D0032693AE063BA03A /* Pods-Makestagram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1AA1AF71F2A3B6D00BD5A59 /* Build configuration list for PBXNativeTarget "Makestagram" */;
 			buildPhases = (
+				85C1AE739D16CE33EEDEF73A /* [CP] Check Pods Manifest.lock */,
 				D1AA1AE11F2A3B6D00BD5A59 /* Sources */,
 				D1AA1AE21F2A3B6D00BD5A59 /* Frameworks */,
 				D1AA1AE31F2A3B6D00BD5A59 /* Resources */,
+				AB17F59161279F7A99F166F6 /* [CP] Embed Pods Frameworks */,
+				65697E05334B6334C3063B96 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +123,7 @@
 				TargetAttributes = {
 					D1AA1AE41F2A3B6D00BD5A59 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VCHJRTUPE3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65697E05334B6334C3063B96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85C1AE739D16CE33EEDEF73A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB17F59161279F7A99F166F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D1AA1AE11F2A3B6D00BD5A59 /* Sources */ = {
@@ -258,8 +334,10 @@
 		};
 		D1AA1AF81F2A3B6D00BD5A59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCDBBDD1B16C5A1D61E0DE3C /* Pods-Makestagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VCHJRTUPE3;
 				INFOPLIST_FILE = Makestagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SandraTarve.Makestagram;
@@ -270,8 +348,10 @@
 		};
 		D1AA1AF91F2A3B6D00BD5A59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97B980D0032693AE063BA03A /* Pods-Makestagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VCHJRTUPE3;
 				INFOPLIST_FILE = Makestagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SandraTarve.Makestagram;
